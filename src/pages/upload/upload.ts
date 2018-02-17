@@ -18,7 +18,7 @@ import { MediaComponent } from '../../components/media/media';
 })
 export class UploadPage {
   file: File;  
-  media = new MediaComponent(this.file, '', '');
+  media = new MediaComponent(this.file, ' ', ' ');
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private mediaProvider: MediaProvider) {
   }

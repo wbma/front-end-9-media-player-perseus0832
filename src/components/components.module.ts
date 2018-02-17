@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { SingleFileComponent } from './single-file/single-file';
 import { MediaComponent } from './media/media';
 @NgModule({
-	declarations: [SingleFileComponent,
+	declarations: [
     MediaComponent],
 	imports: [],
-	exports: [SingleFileComponent,
+	exports: [
     MediaComponent]
 })
 export class ComponentsModule {}

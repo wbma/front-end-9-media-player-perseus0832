@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MediaProvider } from '../../providers/media/media';
 
 /**
  * Generated class for the MediaComponent component.

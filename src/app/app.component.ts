@@ -10,8 +10,8 @@ import { LoginPage } from '../pages/login/login';
 import { ProfilePage } from '../pages/profile/profile';
 import { RegisterPage } from '../pages/register/register';
 import { UploadPage } from '../pages/upload/upload';
-import { SingleFileComponent } from '../components/single-file/single-file';
 import { SingleFilePage } from '../pages/single-file/single-file';
+import { MediaComponent } from '../components/media/media';
 
 @Component({
   templateUrl: 'app.html'

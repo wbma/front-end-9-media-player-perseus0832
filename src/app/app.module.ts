@@ -17,6 +17,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { RegisterPage } from '../pages/register/register';
 import { UploadPage } from '../pages/upload/upload';
 import { SingleFilePage } from '../pages/single-file/single-file';
+import { MediaComponent } from '../components/media/media';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SingleFilePage } from '../pages/single-file/single-file';
     RegisterPage,
     UploadPage,
     SingleFilePage,
+    MediaComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +49,7 @@ import { SingleFilePage } from '../pages/single-file/single-file';
     RegisterPage,
     UploadPage,
     SingleFilePage,
+    MediaComponent,
   ],
   providers: [
     StatusBar,
