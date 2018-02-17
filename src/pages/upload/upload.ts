@@ -18,7 +18,8 @@ import { MediaComponent } from '../../components/media/media';
 })
 export class UploadPage {
   file: File;  
-  media = new MediaComponent(this.file, ' ', ' ');
+  media = new MediaComponent(this.file, '', '');
+  message: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private mediaProvider: MediaProvider) {
   }
@@ -42,9 +43,12 @@ export class UploadPage {
       
     this.mediaProvider.uploadFile(form).subscribe(data => {
       console.log(data);
+      this.message = data['message'];
     },(e:HttpErrorResponse) => {
       console.log(e);
-    });
+      this.message = e.message;
+    }
+  );
     }
 
   ionViewDidLoad() {
